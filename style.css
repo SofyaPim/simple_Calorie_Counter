@@ -1,13 +1,12 @@
 :root {
-   --accent1: #3daeb7;
-   
+   --accent1: #3daeb7;   
    --main: #eeeeee;
    --accent2: #db643e;
 
  }
  
  body {
-   font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-family: "Mulish", sans-serif;
    font-size: 18px;
    background-color: var(--main);
    color: var(--accent1);
