@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title> Счетчик калорий</title>
+</head>
+<body>
+   <main>
+      <h1> Счетчик калорий</h1>
+      <div class="container">
+        <form id="calorie-counter">
+          <label for="budget">Лимит</label>
+          <input   type="number" min="0" id="budget" placeholder="количество каллорий"
+            required
+          />
+          <fieldset id="breakfast">
+            <legend>Завтрак</legend>
+            <div class="input-container"></div>
+          </fieldset>
+          <fieldset id="lunch">
+            <legend>Обед</legend>
+            <div class="input-container"></div>
+          </fieldset>
+          <fieldset id="dinner">
+            <legend>Ужин</legend>
+            <div class="input-container"></div>
+          </fieldset>
+          <fieldset id="snacks">
+            <legend>Снеки</legend>
+            <div class="input-container"></div>
+          </fieldset>
+          <fieldset id="exercise">
+            <legend>Упражнения</legend>
+            <div class="input-container"></div>
+          </fieldset>
+          <div class="controls">
+            <span>
+               <label for="entry-dropdown">Добавить пищу или упражнения:</label>
+               <select name="options" id="entry-dropdown" >
+                  <option value="breakfast" selected>Завтрак</option>
+                  <option value="lunch">Обед</option>
+                  <option value="dinner">Ужин</option>
+                  <option value="snacks">Снеки</option>
+                  <option value="exercise">Упражнения</option>
+               </select>
+               <button type="button" id="add-entry">Добавить запись</button>
+
+            </span>
+          </div>
+          <div>
+            <button type="submit">Рассчитать оставшиеся калории</button>
+            <button type="button" id="clear">Очистить</button>
+          </div>
+        </form>
+        <div class="output hide" id="output"></div>
+      </div>
+    </main>
+  <script src="script.js"></script>
+</body>
+</html>
